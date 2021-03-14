@@ -4,7 +4,8 @@
   "description": "Todo app TS",
   "main": "index.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint --ext .jsx --ext .js --ext .ts --ext .tsx src/",
+    "test": "npm run eslint",
     "start": "webpack serve"
   },
   "repository": {
@@ -18,9 +19,19 @@
   },
   "homepage": "https://github.com/MasterOfMenace/ts-todo#readme",
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "@types/webpack": "^4.41.26",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.22.0",
+    "eslint-config-htmlacademy": "^2.1.0",
+    "eslint-plugin-react": "^7.22.0",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^5.25.0",
